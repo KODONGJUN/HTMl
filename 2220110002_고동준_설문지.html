@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>설문조사</title>
+    <style type="text/css">
+        body{background-color:bisque; }
+        h1{color:brown}
+        
+    </style>
+</head>
+<body>
+   <form name="ex" method="get" action="https://www.kopo.ac.kr">
+    <h1>
+        학생 만족도 설문조사
+    </h1>
+    <fieldset>
+        <legend>필수입력 사항</legend>
+     이름: 
+     <input type="text" name="name" value="홍길동" size="20" maxlength="10">
+     <br>
+     학번: 
+     <input type="text" name="num" value="**********" size="20" maxlength="10">
+     <br>
+     학과: 
+     <input type="text" name="dep" value="~학과" size="20" maxlength="10">
+    </fieldset>
+    <fieldset>
+        <legend>선택입력 사항</legend>
+    이메일: 
+     <input type="text" placeholder="***@***.**">
+     <br>
+     sns주소: 
+     <input type="text" placeholder="http://">
+    </fieldset>
+     <fieldset>
+        <legend>체크해주세요</legend>
+        1. 수업 내용에 대해 만족하시나요? : 
+        <input type="radio" name="satisfy" value="1" checked id="1st">
+           <label for="1st">  매우만족</label>
+        <input type="radio" name="satisfy" value="2" id="2nd">
+           <label for="2nd" > 대체로만족  </label>
+        <input type="radio" name="satisfy" value="3" id="2nd">
+           <label for="2nd" > 불만족  </label>
+        <input type="radio" name="satisfy" value="4" id="2nd">
+           <label for="2nd" > 매우불만족  </label>
+           <br>
+        2.학교의 시설에 대해 만족하시나요?
+        <input type="radio" name="a" value="1" checked id="1st">
+           <label for="1st">  매우만족</label>
+        <input type="radio" name="a" value="2" id="2nd">
+           <label for="2nd" > 대체로만족  </label>
+        <input type="radio" name="a" value="3" id="2nd">
+           <label for="2nd" > 불만족  </label>
+        <input type="radio" name="a" value="4" id="2nd">
+           <label for="2nd" > 매우불만족  </label>
+           <br>
+        3.수업의 전문성에 대해 만족하시나요?
+        <input type="radio" name="b" value="1" checked id="1st">
+           <label for="1st">  매우만족</label>
+        <input type="radio" name="b" value="2" id="2nd">
+           <label for="2nd" > 대체로만족  </label>
+        <input type="radio" name="b" value="3" id="2nd">
+           <label for="2nd" > 불만족  </label>
+        <input type="radio" name="b" value="4" id="2nd">
+           <label for="2nd" > 매우불만족  </label>
+           <br>
+         4.학식에 대해 만족하시나요?
+        <input type="radio" name="c" value="1" checked id="1st">
+           <label for="1st">  매우만족</label>
+        <input type="radio" name="c" value="2" id="2nd">
+           <label for="2nd" > 대체로만족  </label>
+        <input type="radio" name="c" value="3" id="2nd">
+           <label for="2nd" > 불만족  </label>
+        <input type="radio" name="c" value="4" id="2nd">
+           <label for="2nd" > 매우불만족  </label>
+           <br>
+           
+    </fieldset>
+   <hr>
+        <legend>건의사항 및 하고싶은말</legend>
+        <textarea cols="40" rows="10" name="memo" >
+            자유롭게 적어주세요.
+        </textarea>
+        <br>
+        <input type="submit" value="전송하기"> &nbsp;&nbsp;&nbsp;
+        <input type="reset" value="취소하기">
+    </form>
+    
+</body>
+</html>
