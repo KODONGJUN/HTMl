@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+   <h1>window 객체 연습</h1>
+   <script>
+    //var win;
+       //function open_window(){
+           //var url=prompt("접속하려는 url 주소를 입력");
+           //if(url) win=window.open(url);
+           
+       //}
+       var product = {
+           제품명 : '7D건조 망고',
+           유형 : '당절임',
+           성분 : '망고','설탕',
+           원산지 : '필리핀'
+       };
+       for ( var i in product) {
+           alert(i+ ':' + product[i]);
+       }
+    
+       
+    
+       
+       
+    </script>
+    <button onclick="open_window();">url열기</button>
+    <button onclick="win.close();"> url 닫기</button>
+    
+    
+    
+</body>
+</html>
