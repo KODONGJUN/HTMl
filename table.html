@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1>기본표 작성하기</h1>
+    <table border="1">
+<!--        3행2열표-->
+   <tr><th>번호</th><th>이름</th></tr>
+   <tr><td>1</td><td>고동준</td></tr>
+   <tr><td>2</td><td>김하나</td></tr>
+    </table><hr>
+    <table border="1">
+<!--        3행3열표-->
+   <tr><th>번호</th><th>이름</th><th>연락처</th></tr>
+        <tr><td>1</td><td>고동준</td> <td rowspan="2">010-1234-5678</td></tr>
+   <tr><td>2</td><td>김하나</td></tr>
+    </table><hr>
+    <table border="1">
+<!--        3행2열표-->
+   <thead><tr><th>번호</th><th>이름</th></tr></thead>
+   <tbody><tr><td>1</td><td>고동준</td></tr></tbody>
+   <tbody><tr><td>2</td><td>김하나</td></tr></tbody>
+        <tfoot><tr><td colspan="2">총 2명</td></tr></tfoot>
+    </table><hr>
+</body>
+</html>
